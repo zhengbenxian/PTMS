@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_check_title"
+        style="@style/Tv_Default_Style"
+        android:padding="@dimen/size_20dp"
+        android:text="证照"
+        android:textSize="@dimen/tv_16sp" />
+
+    <View style="@style/View_Line_Style" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:paddingLeft="@dimen/size_20dp" />
+</LinearLayout>

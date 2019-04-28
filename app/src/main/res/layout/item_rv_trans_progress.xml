@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_circle" />
+
+        <LinearLayout
+            android:id="@+id/layout_trans_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_15dp"
+            android:layout_toRightOf="@+id/img_dot"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/size_5dp">
+
+            <TextView
+                android:id="@+id/tv_progress_oil"
+                style="@style/Tv_Default_Style"
+                android:layout_width="match_parent"
+                android:drawableRight="@drawable/ic_omit"
+                android:paddingRight="@dimen/size_10dp"
+                android:text="是否" />
+
+            <TextView
+                android:id="@+id/tv_progress_status"
+                style="@style/Tv_Default_Style"
+                android:text="发版"
+                android:textSize="@dimen/tv_16sp" />
+
+            <TextView
+                android:id="@+id/tv_progress_No"
+                style="@style/Tv_Content"
+                android:text="车牌"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_progress_driver"
+                style="@style/Tv_Content"
+                android:text="司机"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_progress_driver_e"
+                style="@style/Tv_Content"
+                android:text="司押"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/empty_view"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/layout_trans_progress"
+            android:layout_marginLeft="@dimen/size_15dp"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="@dimen/size_1dp"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/empty_view"
+            android:layout_alignLeft="@+id/img_dot"
+            android:layout_below="@+id/img_dot"
+            android:layout_marginLeft="@dimen/size_7dp"
+            android:background="@color/color_tv_second" />
+    </RelativeLayout>
+</LinearLayout>

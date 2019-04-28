@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearMatchStyle_Ver"
+    tools:context="com.pacia.ptms.carrier.car.CarListFragment">
+
+    <TextView
+        android:id="@+id/tv_car_number"
+        style="@style/Tv_Default_Style"
+        android:padding="@dimen/size_10dp"
+        android:textColor="@color/color_green"
+        android:visibility="visible"
+        android:text="车辆" />
+
+    <include layout="@layout/layout_swip_recycle" />
+
+</LinearLayout>

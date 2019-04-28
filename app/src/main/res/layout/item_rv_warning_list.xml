@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/size_5dp"
+    android:background="@drawable/shape_item_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/size_8dp">
+
+    <TextView
+        android:id="@+id/tv_warning_type"
+        style="@style/Tv_Default_Style"
+        android:layout_marginRight="@dimen/size_3dp"
+        android:background="@drawable/shape_stroke_bg_5dp"
+        android:paddingBottom="@dimen/size_5dp"
+        android:paddingLeft="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp"
+        android:paddingTop="@dimen/size_5dp"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_5dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_warning_plate"
+                style="@style/Tv_Default_Style"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_warning_remark"
+                style="@style/Tv_Content"
+                android:text="" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_warning_place"
+            style="@style/Tv_Content"
+            android:singleLine="false"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Tv_Default_Style"
+            android:layout_marginBottom="@dimen/size_5dp"
+            android:drawableLeft="@drawable/ic_warning"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_warning_time"
+            style="@style/Tv_Content"
+            android:singleLine="false"
+            android:text="" />
+    </LinearLayout>
+</LinearLayout>

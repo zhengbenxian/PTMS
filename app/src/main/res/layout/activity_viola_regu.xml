@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pacia.ptms.carrier.check.CheckListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_check_stime"
+                style="@style/Tv_Default_Style"
+                android:gravity="center"
+                android:text="2019-01-11" />
+
+            <TextView
+                style="@style/Tv_Content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/size_3dp"
+                android:paddingRight="@dimen/size_3dp"
+                android:text="至" />
+
+            <TextView
+                android:id="@+id/tv_check_etime"
+                style="@style/Tv_Default_Style"
+                android:gravity="center"
+                android:text="2019-01-11" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_check_level"
+            style="@style/Tv_Default_Style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/size_10dp"
+            android:drawableRight="@drawable/ic_spinner_rocket"
+            android:padding="@dimen/size_15dp"
+            android:text="全部"
+            android:textColor="@color/color_green"
+            android:textSize="@dimen/tv_16sp" />
+
+        <TextView
+            android:id="@+id/tv_check_status"
+            style="@style/Tv_Default_Style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/size_10dp"
+            android:drawableRight="@drawable/ic_spinner_rocket"
+            android:padding="@dimen/size_15dp"
+            android:text="全部"
+            android:textColor="@color/color_green"
+            android:textSize="@dimen/tv_16sp" />
+
+        <Spinner
+            android:id="@+id/sp_check_level"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:dropDownVerticalOffset="30dp"
+            android:spinnerMode="dropdown"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/sp_check_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:dropDownVerticalOffset="30dp"
+            android:spinnerMode="dropdown"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_swip_recycle" />
+</LinearLayout>

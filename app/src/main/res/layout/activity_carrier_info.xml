@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearMatchStyle_Ver"
+    android:background="@color/colorWhite"
+    tools:context="com.pacia.ptms.carrier.info.CarrierInfoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_green"
+        android:visibility="gone"
+        app:contentInsetStart="@dimen/size_5dp">
+
+        <TextView
+            android:id="@+id/tv_sub_top_back"
+            style="@style/Tv_Top_Style"
+            android:drawableLeft="@drawable/ic_back"
+            android:paddingBottom="@dimen/size_10dp"
+            android:paddingLeft="@dimen/size_10dp"
+            android:paddingTop="@dimen/size_10dp"
+            android:text="@string/back"
+            android:textSize="@dimen/tv_14sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_top_search"
+            style="@style/Et_Search"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/size_30dp"
+            android:layout_marginRight="@dimen/size_30dp"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="@dimen/size_15dp"
+            android:hint="搜索承运商名称"
+            android:imeOptions="actionSearch" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        app:tabBackground="@color/colorWhite"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/color_green"
+        app:tabIndicatorHeight="1dp"
+        app:tabMode="fixed">
+
+    </android.support.design.widget.TabLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.5dp"
+        android:background="@color/color_bg" />
+
+    <EditText
+        android:id="@+id/et_search"
+        style="@style/Et_Search"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/size_15dp"
+        android:layout_marginLeft="@dimen/size_30dp"
+        android:layout_marginRight="@dimen/size_30dp"
+        android:layout_marginTop="@dimen/size_15dp"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="@dimen/size_15dp"
+        android:hint="搜索车牌号"
+        android:imeOptions="actionSearch"
+        android:visibility="gone" />
+
+    <com.pacia.ptms.widget.NoScrollViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </com.pacia.ptms.widget.NoScrollViewPager>
+</LinearLayout>

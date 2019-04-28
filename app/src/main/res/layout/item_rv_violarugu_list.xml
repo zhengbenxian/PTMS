@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/size_5dp"
+    android:background="@drawable/shape_item_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/size_8dp">
+
+    <TextView
+        android:id="@+id/tv_viola_item_grade"
+        style="@style/Tv_Default_Style"
+        android:background="@drawable/shape_stroke_red_5dp"
+        android:paddingBottom="@dimen/size_3dp"
+        android:paddingLeft="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp"
+        android:paddingTop="@dimen/size_3dp"
+        android:text="A级"
+        android:textColor="@color/color_red"
+        android:textSize="@dimen/tv_16sp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_viola_item_plate"
+            style="@style/Tv_Default_Style"
+            android:paddingBottom="@dimen/size_5dp"
+            android:paddingTop="@dimen/size_5dp"
+            android:text="A级"
+            android:textSize="@dimen/tv_16sp" />
+
+        <TextView
+            android:id="@+id/tv_viola_item_company"
+            style="@style/Tv_Content"
+            android:text="A级" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_10dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_viola_item_statue"
+            style="@style/Tv_Default_Style"
+            android:layout_marginBottom="@dimen/size_5dp"
+            android:text="A级" />
+
+        <TextView
+            android:id="@+id/tv_viola_item_No"
+            style="@style/Tv_Content"
+            android:paddingBottom="@dimen/size_2dp"
+            android:text="A级"
+            android:textColor="@color/color_black" />
+
+        <TextView
+            android:id="@+id/tv_viola_item_time"
+            style="@style/Tv_Content"
+            android:text="A级"
+            android:textColor="@color/color_black" />
+
+    </LinearLayout>
+</LinearLayout>

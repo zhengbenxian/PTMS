@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pacia.ptms.activity.transport.TransInfoActivity">
+
+    <LinearLayout style="@style/LinearMatchStyle_Ver">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_10dp">
+
+            <TextView
+                android:id="@+id/tv_trans_info_state"
+                style="@style/Tv_Default_Style"
+                android:layout_weight="1"
+                android:text="已发班"
+                android:textSize="@dimen/tv_16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_30dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:src="@drawable/ic_location" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Tv_Default_Style"
+            android:layout_margin="@dimen/size_15dp"
+            android:text="运输信息" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/size_15dp">
+
+            <TextView
+                style="@style/Tv_Content"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:text="发油单位" />
+
+            <TextView
+                android:id="@+id/tv_transinfo_out_company"
+                style="@style/Tv_Default_Style"
+                android:text=""
+                android:textSize="@dimen/tv_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/size_15dp">
+
+            <TextView
+                style="@style/Tv_Content"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:text="提油单位" />
+
+            <TextView
+                android:id="@+id/tv_trans_info_oils"
+                style="@style/Tv_Default_Style"
+                android:singleLine="false"
+                android:text=""
+                android:textSize="@dimen/tv_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/size_15dp">
+
+            <TextView
+                style="@style/Tv_Content"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:text="运输日期" />
+
+            <TextView
+                android:id="@+id/tv_trans_info_date"
+                style="@style/Tv_Default_Style"
+                android:text=""
+                android:textSize="@dimen/tv_16sp" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Tv_Default_Style"
+            android:layout_margin="@dimen/size_15dp"
+            android:text="班次信息" />
+
+        <LinearLayout
+            android:id="@+id/layout_trans_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_bg"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/size_15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/size_15dp">
+
+                <TextView
+                    style="@style/Tv_Content"
+                    android:layout_marginRight="@dimen/size_10dp"
+                    android:text="承运类型" />
+
+                <TextView
+                    android:id="@+id/tv_trans_info_type"
+                    style="@style/Tv_Default_Style"
+                    android:layout_width="match_parent"
+                    android:drawableRight="@drawable/ic_omit"
+                    android:paddingRight="@dimen/size_10dp"
+                    android:text=""
+                    android:textSize="@dimen/tv_16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/size_15dp">
+
+                <TextView
+                    style="@style/Tv_Content"
+                    android:layout_marginRight="@dimen/size_10dp"
+                    android:text="车船编号" />
+
+                <TextView
+                    android:id="@+id/tv_trans_info_No"
+                    style="@style/Tv_Default_Style"
+                    android:text=""
+                    android:textSize="@dimen/tv_16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/size_15dp">
+
+                <TextView
+                    style="@style/Tv_Content"
+                    android:layout_marginRight="@dimen/size_10dp"
+                    android:text="司乘人员" />
+
+                <TextView
+                    android:id="@+id/tv_trans_info_driver"
+                    style="@style/Tv_Default_Style"
+                    android:text=""
+                    android:textSize="@dimen/tv_16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/Tv_Default_Style"
+            android:layout_marginLeft="@dimen/size_15dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:text="运输进度" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_trans_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:background="@color/color_bg"
+            android:padding="@dimen/size_15dp" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

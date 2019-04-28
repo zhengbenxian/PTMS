@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:descendantFocusability="blocksDescendants"
+    android:fillViewport="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.pacia.ptms.activity.viola.ViolaReguInfoActivity">
+
+    <LinearLayout style="@style/LinearMatchStyle_Ver">
+
+        <LinearLayout
+            android:id="@+id/layout_viola_info"
+            style="@style/LinearMatchStyle_Ver">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner_viola"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_100dp"
+                app:delay_time="2000"
+                app:image_scale_type="center_crop"
+                app:indicator_margin="4dp"
+                app:is_auto_play="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_10dp">
+
+                <TextView
+                    android:id="@+id/tv_viola_plate"
+                    style="@style/Tv_Default_Style"
+                    android:text=""
+                    android:textSize="@dimen/tv_18sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_viola_company"
+                        style="@style/Tv_Default_Style"
+                        android:padding="@dimen/size_3dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_viola_per_name"
+                        style="@style/Tv_Default_Style"
+                        android:padding="@dimen/size_3dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_viola_tel"
+                        style="@style/Tv_Default_Style"
+                        android:padding="@dimen/size_3dp"
+                        android:text=""
+                        android:textColor="@color/color_green" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_10dp">
+
+                <LinearLayout
+                    android:id="@+id/layout_viola"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_viola_grade"
+                        style="@style/Tv_Default_Style"
+                        android:background="@drawable/shape_stroke_red_5dp"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/size_8dp"
+                        android:paddingLeft="@dimen/size_25dp"
+                        android:paddingRight="@dimen/size_25dp"
+                        android:paddingTop="@dimen/size_8dp"
+                        android:text=""
+                        android:textColor="@color/color_red"
+                        android:textSize="@dimen/tv_18sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_viola_qualify"
+                    style="@style/Tv_Default_Style"
+                    android:background="@drawable/shape_stroke_bg_5dp"
+                    android:paddingBottom="@dimen/size_5dp"
+                    android:paddingLeft="@dimen/size_10dp"
+                    android:paddingRight="@dimen/size_10dp"
+                    android:paddingTop="@dimen/size_5dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <View
+                style="@style/View_Line_Style"
+                android:layout_marginBottom="@dimen/size_5dp"
+                android:layout_marginTop="@dimen/size_5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/size_10dp"
+                android:paddingRight="@dimen/size_10dp">
+
+                <TextView
+                    android:id="@+id/tv_viola_oil"
+                    style="@style/Tv_Default_Style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="@dimen/tv_16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_viola_time"
+                        style="@style/Tv_Default_Style"
+                        android:padding="@dimen/size_3dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_viola_peroil_name"
+                        style="@style/Tv_Default_Style"
+                        android:padding="@dimen/size_3dp"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_viola_peroil_tel"
+                        style="@style/Tv_Default_Style"
+                        android:padding="@dimen/size_3dp"
+                        android:text=""
+                        android:textColor="@color/color_green" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/View_Line_Style"
+                android:layout_marginBottom="@dimen/size_5dp"
+                android:layout_marginTop="@dimen/size_5dp" />
+
+            <TextView
+                style="@style/Tv_Default_Style"
+                android:paddingBottom="@dimen/size_8dp"
+                android:paddingLeft="@dimen/size_10dp"
+                android:paddingRight="@dimen/size_10dp"
+                android:paddingTop="@dimen/size_10dp"
+                android:text="违规内容"
+                android:textSize="@dimen/tv_16sp" />
+
+            <EditText
+                android:id="@+id/tv_viola_content"
+                style="@style/Et_Login_Style"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:background="@null"
+                android:enabled="false"
+                android:minLines="1"
+                android:paddingLeft="@dimen/size_10dp"
+                android:paddingRight="@dimen/size_10dp"
+                android:text="嗯嗯嗯"
+                android:textSize="@dimen/tv_14sp" />
+
+            <View
+                style="@style/View_Line_Style"
+                android:layout_marginBottom="@dimen/size_5dp"
+                android:layout_marginTop="@dimen/size_5dp" />
+
+            <LinearLayout
+                android:id="@+id/layout_statue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Tv_Default_Style"
+                    android:paddingBottom="@dimen/size_8dp"
+                    android:paddingLeft="@dimen/size_10dp"
+                    android:paddingRight="@dimen/size_10dp"
+                    android:paddingTop="@dimen/size_10dp"
+                    android:text="整改处理"
+                    android:textSize="@dimen/tv_16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_bg"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/size_5dp"
+                    android:paddingLeft="@dimen/size_10dp"
+                    android:paddingRight="@dimen/size_10dp"
+                    android:paddingTop="@dimen/size_5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_viola_statue"
+                            style="@style/Tv_Default_Style"
+                            android:text=""
+                            android:textSize="@dimen/tv_16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_viola_statue_oil"
+                            style="@style/Tv_Default_Style"
+                            android:text=""
+                            android:textSize="@dimen/tv_16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_viola_statue_time"
+                            style="@style/Tv_Default_Style"
+                            android:padding="@dimen/size_3dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/tv_viola_statue_name"
+                            style="@style/Tv_Default_Style"
+                            android:padding="@dimen/size_3dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/tv_viola_statue_tel"
+                            style="@style/Tv_Default_Style"
+                            android:padding="@dimen/size_3dp"
+                            android:text=""
+                            android:textColor="@color/color_green" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_viola"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_10dp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/layout_error"
+            layout="@layout/layout_error"
+            android:visibility="gone" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

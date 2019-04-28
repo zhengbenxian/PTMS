@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearMatchStyle_Ver"
+    android:paddingLeft="@dimen/size_20dp"
+    android:paddingRight="@dimen/size_20dp"
+    tools:context="com.pacia.ptms.oildepot.auditing.AuditingActivity">
+
+    <TextView
+        style="@style/Tv_Default_Style"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/size_20dp"
+        android:layout_marginTop="@dimen/size_20dp"
+        android:text="请输入要审核的车船牌号"
+        android:textSize="@dimen/tv_18sp" />
+
+    <EditText
+        android:id="@+id/et_plate"
+        style="@style/Et_Login_Style"
+        android:hint="请输入要审核的车船牌号"
+        android:paddingLeft="@dimen/size_5dp" />
+
+    <TextView
+        android:id="@+id/tv_begin_check"
+        style="@style/Tv_Default_Style"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/size_20dp"
+        android:layout_marginTop="@dimen/size_20dp"
+        android:background="@drawable/shape_solid_green_5dp"
+        android:paddingBottom="@dimen/size_10dp"
+        android:paddingLeft="@dimen/size_30dp"
+        android:paddingRight="@dimen/size_30dp"
+        android:paddingTop="@dimen/size_10dp"
+        android:text="开始审核"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/tv_18sp" />
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearMatchStyle_Ver"
+    android:background="@color/color_bg"
+    tools:context="com.pacia.ptms.carrier.person.PersonListFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_person_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/size_10dp"
+                android:paddingTop="@dimen/size_10dp"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/Tv_Default_Style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="法定代表人" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Tv_Default_Style"
+                        android:layout_marginBottom="@dimen/size_5dp"
+                        android:text="法定代表人" />
+
+                    <TextView
+                        style="@style/Tv_Default_Style"
+                        android:layout_marginBottom="@dimen/size_5dp"
+                        android:text="法定代表人" />
+
+                    <TextView
+                        style="@style/Tv_Default_Style"
+                        android:text="法定代表人" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/Tv_Default_Style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="法定代表人" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_driver_detail"
+                style="@style/Tv_Default_Style"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:drawableRight="@drawable/ic_omit"
+                android:paddingLeft="@dimen/size_15dp"
+                android:paddingRight="@dimen/size_15dp"
+                android:text="驾驶员" />
+
+            <com.pacia.ptms.widget.MyGridView
+                android:id="@+id/gv_driver"
+                style="@style/GridView_Style"
+                android:background="@drawable/shape_solid_white_5dp"
+                android:numColumns="4"
+                android:padding="@dimen/size_5dp" />
+
+            <TextView
+                android:id="@+id/tv_d_escort_detail"
+                style="@style/Tv_Default_Style"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:drawableRight="@drawable/ic_omit"
+                android:paddingLeft="@dimen/size_15dp"
+                android:paddingRight="@dimen/size_15dp"
+                android:text="押运员" />
+
+            <com.pacia.ptms.widget.MyGridView
+                android:id="@+id/gv_driver_escort"
+                style="@style/GridView_Style"
+                android:background="@drawable/shape_solid_white_5dp"
+                android:numColumns="4"
+                android:padding="@dimen/size_5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_empty_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size_200dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_error"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/ic_empty_data"
+                android:gravity="center"
+                android:text="@string/no_data_now" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

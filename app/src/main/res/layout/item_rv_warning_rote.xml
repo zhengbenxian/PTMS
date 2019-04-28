@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_look"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/size_20dp">
+
+        <TextView
+            android:id="@+id/tv_rote_time"
+            style="@style/Tv_Default_Style"
+            android:paddingTop="@dimen/size_10dp"
+            android:text="售达方" />
+
+        <TextView
+            android:id="@+id/tv_rote_location"
+            style="@style/Tv_Default_Style"
+            android:paddingBottom="@dimen/size_10dp"
+            android:paddingTop="@dimen/size_10dp"
+            android:text=" sf " />
+
+        <TextView
+            android:id="@+id/tv_rote_look"
+            style="@style/Tv_Default_Style"
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:paddingBottom="@dimen/size_10dp"
+            android:paddingRight="@dimen/size_50dp"
+            android:text="查看地图"
+            android:textColor="@color/color_green" />
+    </LinearLayout>
+</LinearLayout>

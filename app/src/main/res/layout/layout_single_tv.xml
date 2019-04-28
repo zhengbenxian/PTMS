@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_spinner_tv"
+        style="@style/Tv_Default_Style"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/size_10dp"
+        android:paddingLeft="@dimen/size_30dp"
+        android:paddingRight="@dimen/size_20dp"
+        android:paddingTop="@dimen/size_10dp"
+        android:singleLine="true"
+        android:text="dsf"
+        android:textColor="@color/color_tv_second" />
+</LinearLayout>

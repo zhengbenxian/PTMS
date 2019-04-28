@@ -1,0 +1,146 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Main" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <!--style 基类-->
+    <style name="Base_WH_Wrap" parent="AppTheme">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="Base_WH_Match" parent="AppTheme">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <!--LinerLayout-->
+    <style name="LinearMatchStyle_Ver" parent="Base_WH_Match">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LinearMatchStyle_Hori" parent="Base_WH_Match">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!--默认文本-->
+    <style name="Tv_Default_Style" parent="Base_WH_Wrap">
+        <item name="android:textSize">@dimen/tv_14sp</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Tv_Bg_Padding_Style" parent="Tv_Default_Style">
+        <item name="android:paddingLeft">@dimen/size_15dp</item>
+        <item name="android:paddingRight">@dimen/size_15dp</item>
+        <item name="android:paddingTop">@dimen/size_5dp</item>
+        <item name="android:paddingBottom">@dimen/size_5dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@drawable/shape_solid_green_5dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Tv_Content" parent="Tv_Default_Style">
+        <item name="android:textSize">@dimen/tv_12sp</item>
+        <item name="android:textColor">@color/color_tv_second</item>
+    </style>
+
+    <style name="Tv_Top_Style" parent="Tv_Default_Style">
+        <item name="android:textSize">@dimen/tv_18sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">1dp</item>
+    </style>
+    <!--日期选择-->
+    <style name="Time_Dialog" parent="AppTheme">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+    </style>
+    <!--一条横线-->
+    <style name="View_Line_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/color_tab_tv_un</item>
+    </style>
+    <!--Dialog Style-->
+    <style name="MyDialog_Style" parent="Theme.AppCompat.Dialog">
+        <!--Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--是否显示title-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <!--设置dialog的背景-->
+        <item name="android:background">@android:color/transparent</item>
+        <!--显示区域背景是否透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--就是用来控制灰度的值，当为1时，界面除了我们的dialog内容是高亮显示的，-->
+        <!--dialog以外的区域是黑色的，完全看不到其他内容，系统的默认值是0.5-->
+        <item name="android:backgroundDimAmount">0.5</item>
+        <!--显示区域以外是否使用黑色半透明背景-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!--进度条-->
+    <style name="ProgressStyle" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:progressDrawable">@drawable/progress_layer</item>
+    </style>
+    <!--GridView-->
+    <style name="GridView_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:horizontalSpacing">@dimen/size_5dp</item>
+        <item name="android:verticalSpacing">@dimen/size_5dp</item>
+        <item name="android:stretchMode">columnWidth</item>
+        <item name="android:layout_marginLeft">@dimen/size_15dp</item>
+        <item name="android:layout_marginRight">@dimen/size_15dp</item>
+        <item name="android:numColumns">3</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+    </style>
+
+    <style name="Setting_Layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">@dimen/size_15dp</item>
+        <item name="android:paddingTop">@dimen/size_15dp</item>
+        <item name="android:paddingLeft">@dimen/size_20dp</item>
+    </style>
+
+    <style name="Et_Login_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_40dp</item>
+        <item name="android:background">@drawable/shape_solid_white_5dp</item>
+        <item name="android:drawablePadding">@dimen/size_10dp</item>
+        <item name="android:textSize">@dimen/tv_14sp</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:minLines">1</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="Et_Search" parent="Et_Login_Style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/size_15dp</item>
+        <item name="android:paddingTop">@dimen/size_5dp</item>
+        <item name="android:paddingBottom">@dimen/size_5dp</item>
+        <item name="android:paddingRight">@dimen/size_10dp</item>
+    </style>
+</resources>

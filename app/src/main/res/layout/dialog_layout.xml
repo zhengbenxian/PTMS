@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearMatchStyle_Ver"
+    android:layout_width="@dimen/size_200dp"
+    android:layout_height="@dimen/size_300dp"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_solid_white_5dp">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/size_10dp"
+        android:paddingTop="@dimen/size_15dp"
+        android:gravity="center"
+        android:text="温馨提示"
+        android:textColor="@color/color_red"
+        android:textSize="@dimen/tv_22sp" />
+
+    <View style="@style/View_Line_Style" />
+
+    <TextView
+        android:id="@+id/dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="@dimen/size_20dp"
+        android:layout_weight="1"
+        android:text="原理是基本\n实践出真知"
+        android:layout_marginBottom="@dimen/size_15dp"
+        android:textSize="@dimen/tv_18sp" />
+
+    <View style="@style/View_Line_Style" />
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/shape_dialog_cancel"
+            android:text="取消"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/tv_16sp" />
+
+        <Button
+            android:id="@+id/dialog_btn_sure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_dialog_sure"
+            android:text="确认"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/tv_16sp" />
+    </LinearLayout>
+</LinearLayout>

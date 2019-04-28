@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pacia.ptms.activity.transport.TransWarehouseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_15dp">
+
+        <TextView
+            android:id="@+id/tv_ware_place"
+            style="@style/Tv_Default_Style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_location_dark"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_ware_name"
+            style="@style/Tv_Default_Style"
+            android:layout_marginRight="@dimen/size_15dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_ware_time"
+            style="@style/Tv_Default_Style"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_plate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_1dp"
+        android:background="@color/color_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_15dp">
+
+        <TextView
+            style="@style/Tv_Content"
+            android:text="承运车船" />
+
+        <TextView
+            android:id="@+id/tv_ware_plate"
+            style="@style/Tv_Default_Style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/size_3dp"
+            android:singleLine="false"
+            android:text=""
+            android:textSize="@dimen/tv_16sp" />
+
+        <TextView
+            android:id="@+id/tv_ware_plate_statue"
+            style="@style/Tv_Content"
+            android:background="@drawable/shape_stroke_bg_5dp"
+            android:paddingBottom="@dimen/size_5dp"
+            android:paddingLeft="@dimen/size_15dp"
+            android:paddingRight="@dimen/size_15dp"
+            android:paddingTop="@dimen/size_5dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_8dp"
+            android:src="@drawable/ic_omit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_driver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_1dp"
+        android:background="@color/color_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_15dp">
+
+        <TextView
+            style="@style/Tv_Content"
+            android:text="驾驶员" />
+
+        <TextView
+            android:id="@+id/tv_ware_driver"
+            style="@style/Tv_Default_Style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textSize="@dimen/tv_16sp" />
+
+        <TextView
+            android:id="@+id/tv_ware_driver_statue"
+            style="@style/Tv_Content"
+            android:background="@drawable/shape_stroke_bg_5dp"
+            android:paddingBottom="@dimen/size_5dp"
+            android:paddingLeft="@dimen/size_15dp"
+            android:paddingRight="@dimen/size_15dp"
+            android:paddingTop="@dimen/size_5dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_8dp"
+            android:src="@drawable/ic_omit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_driver_e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_15dp">
+
+        <TextView
+            style="@style/Tv_Content"
+            android:text="押运员" />
+
+        <TextView
+            android:id="@+id/tv_ware_driver_e"
+            style="@style/Tv_Default_Style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textSize="@dimen/tv_16sp" />
+
+        <TextView
+            android:id="@+id/tv_ware_Edriver_statue"
+            style="@style/Tv_Content"
+            android:background="@drawable/shape_stroke_bg_5dp"
+            android:paddingBottom="@dimen/size_5dp"
+            android:paddingLeft="@dimen/size_15dp"
+            android:paddingRight="@dimen/size_15dp"
+            android:paddingTop="@dimen/size_5dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_8dp"
+            android:src="@drawable/ic_omit" />
+    </LinearLayout>
+</LinearLayout>

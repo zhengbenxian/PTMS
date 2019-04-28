@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pacia.ptms.carrier.person.PersonListActivity">
+
+    <TextView
+        android:id="@+id/tv_driver_type"
+        style="@style/Tv_Default_Style"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/size_5dp"
+        android:padding="@dimen/size_15dp"
+        android:text="驾驶员" />
+
+    <com.pacia.ptms.widget.MyGridView
+        android:id="@+id/gv_driver_type"
+        style="@style/GridView_Style"
+        android:background="@drawable/shape_solid_white_5dp"
+        android:numColumns="4"
+        android:padding="@dimen/size_5dp" />
+</LinearLayout>

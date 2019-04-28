@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.pacia.ptms.widget.NoScrollViewPager
+        android:id="@+id/main_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_tab">
+
+    </com.pacia.ptms.widget.NoScrollViewPager>
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/size_5dp"
+        android:paddingTop="@dimen/size_5dp"
+        android:weightSum="5">
+
+        <RadioButton
+            android:id="@+id/rb_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_main_selector"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@drawable/tab_tv_main_selector"
+            android:textSize="@dimen/tv_12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_monitor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_monitor_selector"
+            android:gravity="center"
+            android:text="监控"
+            android:textColor="@drawable/tab_tv_main_selector"
+            android:textSize="@dimen/tv_12sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rb_warning"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_warning_selector"
+            android:gravity="center"
+            android:text="预警"
+            android:textColor="@drawable/tab_tv_main_selector"
+            android:textSize="@dimen/tv_12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_my"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_my_selector"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@drawable/tab_tv_main_selector"
+            android:textSize="@dimen/tv_12sp" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/layout_main_check"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/send_igv"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_launcher_background"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_main_check"
+            android:layout_width="@dimen/size_70dp"
+            android:layout_height="@dimen/size_70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/size_3dp"
+            android:background="@drawable/shape_circle_red"
+            android:gravity="center"
+            android:text="入库检查"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/tv_12sp" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context="com.pacia.ptms.activity.center.CenterFragment">
+
+    <LinearLayout style="@style/LinearMatchStyle_Ver">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_180dp"
+            android:background="@color/color_green"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_15dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    style="@style/Tv_Default_Style"
+                    android:textSize="@dimen/tv_16sp"
+                    android:layout_marginBottom="@dimen/size_20dp"
+                    android:text=""
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/Tv_Default_Style"
+                    android:text=""
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_my_msg"
+            style="@style/Setting_Layout"
+            android:layout_marginBottom="@dimen/size_1dp">
+
+            <ImageView
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:src="@mipmap/msg" />
+
+            <TextView
+                style="@style/Tv_Default_Style"
+                android:layout_width="match_parent"
+                android:drawablePadding="@dimen/size_15dp"
+                android:drawableRight="@mipmap/right_rocket"
+                android:paddingLeft="@dimen/size_10dp"
+                android:paddingRight="@dimen/size_20dp"
+                android:text="@string/my_msg"
+                android:textSize="@dimen/tv_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_setting"
+            style="@style/Setting_Layout"
+            android:layout_marginBottom="@dimen/size_1dp">
+
+            <ImageView
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:src="@mipmap/setting" />
+
+            <TextView
+                style="@style/Tv_Default_Style"
+                android:layout_width="match_parent"
+                android:drawablePadding="@dimen/size_15dp"
+                android:drawableRight="@mipmap/right_rocket"
+                android:paddingLeft="@dimen/size_10dp"
+                android:paddingRight="@dimen/size_20dp"
+                android:text="@string/setting"
+                android:textSize="@dimen/tv_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_feedback"
+            style="@style/Setting_Layout"
+            android:layout_marginBottom="@dimen/size_1dp">
+
+            <ImageView
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:src="@mipmap/feedback" />
+
+            <TextView
+                style="@style/Tv_Default_Style"
+                android:layout_width="match_parent"
+                android:drawablePadding="@dimen/size_15dp"
+                android:drawableRight="@mipmap/right_rocket"
+                android:paddingLeft="@dimen/size_10dp"
+                android:paddingRight="@dimen/size_20dp"
+                android:text="@string/feedback"
+                android:textSize="@dimen/tv_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_about"
+            style="@style/Setting_Layout"
+            android:layout_marginBottom="@dimen/size_8dp">
+
+            <ImageView
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:src="@mipmap/demo" />
+
+            <TextView
+                style="@style/Tv_Default_Style"
+                android:layout_width="match_parent"
+                android:drawablePadding="@dimen/size_15dp"
+                android:drawableRight="@mipmap/right_rocket"
+                android:paddingLeft="@dimen/size_10dp"
+                android:paddingRight="@dimen/size_20dp"
+                android:text="@string/about"
+                android:textSize="@dimen/tv_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_login_out"
+            style="@style/Setting_Layout"
+            android:layout_marginBottom="@dimen/size_1dp">
+
+            <ImageView
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:src="@mipmap/out" />
+
+            <TextView
+                style="@style/Tv_Default_Style"
+                android:layout_width="match_parent"
+                android:drawablePadding="@dimen/size_15dp"
+                android:drawableRight="@mipmap/right_rocket"
+                android:paddingLeft="@dimen/size_10dp"
+                android:paddingRight="@dimen/size_20dp"
+                android:text="@string/login_out"
+                android:textSize="@dimen/tv_16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

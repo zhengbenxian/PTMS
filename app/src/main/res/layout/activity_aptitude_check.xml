@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<android.support.v4.widget.NestedScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1">-->
+
+    <LinearLayout
+        style="@style/LinearMatchStyle_Ver"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/ll_empty_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/swipeLayout"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size_200dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/ic_empty_data"
+                android:gravity="center"
+                android:text="@string/no_data_now" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+    <LinearLayout
+        android:id="@+id/layout_aptitude_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_border"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_20dp"
+        android:visibility="visible">
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_not_same"
+                style="@style/Tv_Bg_Padding_Style"
+                android:background="@drawable/shape_solid_red_5dp"
+                android:gravity="center"
+                android:text="不一致" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_same"
+                style="@style/Tv_Bg_Padding_Style"
+                android:gravity="center"
+                android:text="一致" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

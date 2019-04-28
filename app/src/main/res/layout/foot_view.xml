@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearMatchStyle_Ver"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <TextView
+        style="@style/Tv_Default_Style"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/size_10dp"
+        android:text="@string/have_no_more" />
+</LinearLayout>

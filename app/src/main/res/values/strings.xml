@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">油品调运监管应用系统</string>
+    <string-array name="user_role_type">
+        <item>省公司</item>
+        <item>油站</item>
+        <item>油库</item>
+        <item>承运商</item>
+    </string-array>
+    <string-array name="user_role_id">
+        <item>PROVINCE_COMPANY</item>
+        <item>OIL_STATION</item>
+        <item>OIL_WAREHOUSE</item>
+        <item>CARRIER</item>
+    </string-array>
+    <string-array name="statue_id">
+        <item></item>
+        <item>00</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+    <!--日期选择器-->
+    <string name="cancel">取消</string>
+    <string name="chose_time">请选择时间</string>
+    <string name="sure">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="main_page">首页</string>
+    <string name="system">系统</string>
+    <string name="monitor">监控</string>
+    <string name="warning">预警</string>
+    <string name="my">我的</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="all_type">全部类型</string>
+    <string name="road_trans">公路运输</string>
+    <string name="water_trans">水路运输</string>
+    <string name="basic_msg">基础信息</string>
+    <string name="person_msg">人员信息</string>
+    <string name="car_msg">车辆信息</string>
+    <string name="boat_msg">船舶信息</string>
+    <string name="car_monitor">车载监控</string>
+    <string name="running_record">运行记录</string>
+    <string name="security">安全违规</string>
+    <string name="illegal_boarding">非法登车</string>
+    <string name="route_deviation">路线偏离</string>
+    <string name="overtime_parking">超时停车</string>
+    <string name="person_center">个人中心</string>
+    <string name="no_data_now">暂时没有数据</string>
+    <string name="have_no_more">-- 没有更多了 --</string>
+    <string name="input_pw">请输入您的密码</string>
+    <string name="input_user">请输入您的账号</string>
+    <string name="login">登录</string>
+    <string name="forget_pw">忘记密码</string>
+    <string name="back">返回</string>
+    <string name="car_record"><u>跟车记录</u></string>
+    <string name="shipping_manager">承运管理</string>
+    <string name="transport_super">运输监管</string>
+    <string name="safety_statistic">安全统计</string>
+    <string name="viola_regulation">违章违规</string>
+    <string name="person_quali">人员资质</string>
+    <string name="ppt">培训课件</string>
+    <string name="person_award">人员奖励</string>
+    <string name="more">更多</string>
+    <string name="my_msg">我的消息</string>
+    <string name="setting">设置</string>
+    <string name="feedback">意见反馈</string>
+    <string name="about">关于</string>
+    <string name="login_out">退出</string>
+    <string name="plan_date">计划日期</string>
+    <string name="trans_info">运输详情</string>
+    <string name="carrier">承运商</string>
+    <string name="trans_tool">运输工具</string>
+    <string name="go_check"><u>去处理</u></string>
+    <string name="have_number_check">有%1$s件安全违规未结束</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/size_300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/size_15dp">
+
+    <TextView
+        android:id="@+id/tv_take_photo"
+        style="@style/Tv_Default_Style"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:drawablePadding="@dimen/size_5dp"
+        android:drawableTop="@drawable/ic_take_photo"
+        android:gravity="center"
+        android:text="拍照" />
+
+    <TextView
+        android:id="@+id/tv_open_photo"
+        style="@style/Tv_Default_Style"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:drawablePadding="@dimen/size_5dp"
+        android:drawableTop="@drawable/ic_photo"
+        android:gravity="center"
+        android:text="相册" />
+</LinearLayout>

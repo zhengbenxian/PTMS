@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.pacia.ptms.oildepot.auditing.CreateViolaActivity">
+
+    <LinearLayout
+        style="@style/LinearMatchStyle_Ver"
+        android:padding="@dimen/size_20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Tv_Default_Style"
+                android:layout_marginRight="@dimen/size_15dp"
+                android:text="车船牌号"
+                android:textColor="@color/color_tv_second" />
+
+            <TextView
+                android:id="@+id/tv_viola_doc_plate"
+                style="@style/Tv_Default_Style"
+                android:singleLine="false"
+                android:text=""
+                android:textSize="@dimen/tv_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Tv_Default_Style"
+                android:layout_marginRight="@dimen/size_15dp"
+                android:text="违规等级"
+                android:textColor="@color/color_tv_second" />
+
+            <TextView
+                android:id="@+id/tv_viola_doc_grade"
+                style="@style/Tv_Default_Style"
+                android:text=""
+                android:textSize="@dimen/tv_16sp" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Tv_Default_Style"
+            android:layout_marginBottom="@dimen/size_5dp"
+            android:layout_marginRight="@dimen/size_15dp"
+            android:text="违规描述"
+            android:textColor="@color/color_tv_second" />
+
+        <EditText
+            android:id="@+id/et_viola_doc"
+            style="@style/Et_Search"
+            android:layout_marginBottom="@dimen/size_2dp"
+            android:background="@null" />
+
+        <View style="@style/View_Line_Style" />
+
+        <com.pacia.ptms.widget.MyGridView
+            android:id="@+id/gv_chose_img"
+            style="@style/GridView_Style"
+            android:layout_marginTop="@dimen/size_15dp" />
+    </LinearLayout>
+</ScrollView>

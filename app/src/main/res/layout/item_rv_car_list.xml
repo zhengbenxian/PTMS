@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/size_5dp"
+    android:background="@drawable/shape_item_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/size_5dp">
+
+    <TextView
+        android:id="@+id/tv_car_safe_state"
+        style="@style/Tv_Content"
+        android:padding="@dimen/size_3dp"
+        android:text=""
+        android:textColor="@color/color_black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_3dp">
+
+        <TextView
+            android:id="@+id/tv_car_plant"
+            style="@style/Tv_Default_Style"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_half_car_plant"
+            style="@style/Tv_Content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/color_black" />
+
+        <TextView
+            android:id="@+id/tv_car_state"
+            style="@style/Tv_Content"
+            android:background="@drawable/shape_solid_white_5dp"
+            android:padding="@dimen/size_5dp"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/size_5dp">
+
+        <TextView
+            android:id="@+id/tv_car_apti_state"
+            style="@style/Tv_Content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_car_task_num"
+                style="@style/Tv_Content"
+                android:layout_gravity="right"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_car_safe_num"
+                style="@style/Tv_Content"
+                android:layout_gravity="right"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

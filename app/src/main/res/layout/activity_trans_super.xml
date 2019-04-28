@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.pacia.ptms.activity.transport.TransSuperActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_trans_sdate"
+                style="@style/Tv_Default_Style"
+                android:gravity="center"
+                android:text="2019-01-01" />
+
+            <TextView
+                style="@style/Tv_Content"
+                android:gravity="center"
+                android:paddingTop="@dimen/size_3dp"
+                android:paddingBottom="@dimen/size_3dp"
+                android:text="至" />
+
+            <TextView
+                android:id="@+id/tv_trans_edate"
+                style="@style/Tv_Default_Style"
+                android:gravity="center"
+                android:text="2019-01-11" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_trans_state"
+            style="@style/Tv_Default_Style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/size_10dp"
+            android:drawableRight="@drawable/ic_spinner_rocket"
+            android:padding="@dimen/size_15dp"
+            android:text="调运状态"
+            android:textColor="@color/color_green"
+            android:textSize="@dimen/tv_16sp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_swip_recycle" />
+</LinearLayout>

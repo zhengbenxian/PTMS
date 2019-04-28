@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/size_3dp"
+    android:paddingRight="@dimen/size_15dp"
+    android:paddingTop="@dimen/size_3dp">
+
+    <TextView
+        android:id="@+id/item_aptitude_name"
+        style="@style/Tv_Default_Style"
+        android:layout_weight="1"
+        android:text="售达方" />
+
+    <TextView
+        android:id="@+id/item_aptitude_status"
+        style="@style/Tv_Default_Style"
+        android:background="@drawable/shape_stroke_green_5dp"
+        android:paddingBottom="@dimen/size_3dp"
+        android:paddingLeft="@dimen/size_8dp"
+        android:paddingRight="@dimen/size_8dp"
+        android:paddingTop="@dimen/size_3dp"
+        android:text="售达方" />
+</LinearLayout>
