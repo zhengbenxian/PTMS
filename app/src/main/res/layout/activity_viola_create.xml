@@ -62,8 +62,12 @@
         <EditText
             android:id="@+id/et_viola_doc"
             style="@style/Et_Search"
-            android:layout_marginBottom="@dimen/size_2dp"
-            android:background="@null" />
+            android:background="@null"
+            android:drawableLeft="@null"
+            android:maxLines="10"
+            android:paddingBottom="0dp"
+            android:paddingLeft="@dimen/size_5dp"
+            android:paddingTop="0dp" />
 
         <View style="@style/View_Line_Style" />
 

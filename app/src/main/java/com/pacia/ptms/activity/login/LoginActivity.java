@@ -115,7 +115,7 @@ public class LoginActivity extends BaseActivity {
     private void login(final String userName, final String passWord, final String captcha) {
         ServiceFactory.getService(BaseUrl.BASE_URL, ApiService.class)
                 .login(userName, passWord, captcha)
-                .compose(SchedulersHelper.<ResponseBody>io_main(this, true))
+                .compose(SchedulersHelper.<ResponseBody>io_main(this, true,"登录中..."))
                 .compose(this.<ResponseBody>bindUntilEvent(ActivityEvent.DESTROY))
                 .subscribe(new BaseObserver<ResponseBody>() {
                     @Override

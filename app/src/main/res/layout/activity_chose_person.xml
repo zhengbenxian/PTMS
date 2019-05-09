@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearMatchStyle_Ver"
+    tools:context="com.pacia.ptms.carrier.reform.ChosePersonActivity">
+
+    <EditText
+        android:id="@+id/et_search_name"
+        style="@style/Et_Search"
+        android:layout_margin="@dimen/size_15dp"
+        android:hint="请输入姓名" />
+
+    <include layout="@layout/layout_swip_recycle" />
+</LinearLayout>

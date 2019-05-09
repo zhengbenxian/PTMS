@@ -16,6 +16,7 @@
         android:id="@+id/et_carrier_reform"
         style="@style/Et_Search"
         android:layout_marginBottom="@dimen/size_2dp"
+        android:drawableLeft="@null"
         android:background="@null" />
 
     <View style="@style/View_Line_Style" />

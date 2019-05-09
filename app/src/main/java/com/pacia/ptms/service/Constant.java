@@ -39,7 +39,7 @@ public class Constant {
     //油库
     public static final String ROLE_OIL_WAREHOUSE = 50 + "";
     //承运商
-    public static final String ROLE_CARRIER = 200 + "";
+    public static final String ROLE_CARRIER = 500 + "";
     //运输
     //公路运输
     public static final String TRANS_ROAD = "10";

@@ -21,14 +21,15 @@ import io.reactivex.schedulers.Schedulers;
 public class SchedulersHelper {
     private static DialogUtils dialogUtils;
 
-    public static <T> ObservableTransformer<T, T> io_main(final Context context, final boolean isShow) {
+    public static <T> ObservableTransformer<T, T> io_main(final Context context,
+                                                          final boolean isShow,final String msg) {
         return new ObservableTransformer<T, T>() {
             @Override
             public ObservableSource<T> apply(Observable<T> upstream) {
                 if (isShow && dialogUtils == null) {
                     dialogUtils = new DialogUtils();
                 }
-                dialogUtils.createLoadingDialog(context, "访问中...", true);
+                dialogUtils.createLoadingDialog(context, msg, true);
                 return upstream
                         .subscribeOn(Schedulers.io())
                         .doOnSubscribe(new Consumer<Disposable>() {

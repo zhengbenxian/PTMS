@@ -6,9 +6,9 @@ package com.pacia.ptms.service;
 
 public class BaseUrl {
     //谷平
-//    public static final String BASE_URL = "http://192.168.1.107:19011/potms/";
+    public static final String BASE_URL = "http://192.168.1.102:19011/potms/";
     //测试服务器
-    public static final String BASE_URL = "http://192.168.1.8:19011/potms/";
+//    public static final String BASE_URL = "http://192.168.1.8:19011/potms/";
     //Main
 //    public static final String MAIN = "pk=main&sub_pk=main&compress_mode=0&ENCODE_SC=0";
     //登录
@@ -71,5 +71,6 @@ public class BaseUrl {
     public static final String createViola = "m/check/bCheckViolat/insertSelective?";
     //油库审核
     public static final String oilWareHouseViola = "m/check/bCheckViolat/updateByViolatGid?";
-    //
+    //承运商选择人员提交
+    public static final String ChosePerson = "m/transport/bTransportPlan/updateByPlanGid?";
 }

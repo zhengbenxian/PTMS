@@ -146,7 +146,7 @@ public class CarAptitudeActivity extends BaseActivity {
         ServiceFactory.getService(ApiService.class)
                 .updateByExampleSelective(SPUtils.getUserGid(context), gid,
                         gcStatus, qycStatus, siStatus, syStatus)
-                .compose(SchedulersHelper.<ResponseBody>io_main(context, true))
+                .compose(SchedulersHelper.<ResponseBody>io_main(context, true,"提交中..."))
                 .compose(this.<ResponseBody>bindUntilEvent(ActivityEvent.DESTROY))
                 .subscribe(new BaseObserver<ResponseBody>() {
                     @Override

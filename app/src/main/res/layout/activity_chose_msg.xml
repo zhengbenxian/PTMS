@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pacia.ptms.oildepot.auditing.AuditWarehouseActivity">
+
+    <ScrollView
+        android:id="@+id/sv_audit_ware"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout style="@style/LinearMatchStyle_Ver">
+
+            <TextView
+                style="@style/Tv_Default_Style"
+                android:padding="@dimen/size_20dp"
+                android:text="车船编号"
+                android:textColor="@color/color_tv_second"
+                android:textSize="@dimen/tv_16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_1dp"
+                android:background="@color/color_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_audit_plate1"
+                    style="@style/Tv_Default_Style"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/size_5dp"
+                    android:paddingTop="@dimen/size_5dp"
+                    android:text="苏A" />
+
+                <LinearLayout
+                    android:id="@+id/layout_no_complete1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/size_15dp"
+                    android:paddingRight="@dimen/size_20dp"
+                    android:paddingTop="@dimen/size_15dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_audit_number1"
+                            style="@style/Tv_Default_Style"
+                            android:drawableLeft="@drawable/ic_warning_ring"
+                            android:drawablePadding="@dimen/size_5dp"
+                            android:gravity="center"
+                            android:text="@string/have_number_check" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_audit_go1"
+                        style="@style/Tv_Default_Style"
+                        android:text="@string/go_check"
+                        android:textColor="@color/color_green" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_plate2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_1dp"
+                android:background="@color/color_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_audit_plate2"
+                    style="@style/Tv_Default_Style"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/size_5dp"
+                    android:text="苏A" />
+
+                <LinearLayout
+                    android:id="@+id/layout_no_complete2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/size_15dp"
+                    android:paddingRight="@dimen/size_20dp"
+                    android:paddingTop="@dimen/size_15dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_audit_number2"
+                            style="@style/Tv_Default_Style"
+                            android:drawableLeft="@drawable/ic_warning_ring"
+                            android:drawablePadding="@dimen/size_5dp"
+                            android:gravity="center"
+                            android:text="@string/have_number_check" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_audit_go2"
+                        style="@style/Tv_Default_Style"
+                        android:text="@string/go_check"
+                        android:textColor="@color/color_green" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_2dp"
+                android:background="@color/color_bg"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/size_30dp"
+                android:paddingRight="@dimen/size_20dp"
+                android:paddingTop="@dimen/size_30dp">
+
+                <TextView
+                    style="@style/Tv_Default_Style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="驾驶员"
+                    android:textColor="@color/color_tv_second" />
+
+                <TextView
+                    android:id="@+id/tv_audit_driver_name"
+                    style="@style/Tv_Default_Style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_audit_driver_same"
+                    style="@style/Tv_Bg_Padding_Style"
+                    android:layout_marginRight="@dimen/size_20dp"
+                    android:background="@drawable/shape_stroke_bg_5dp"
+                    android:gravity="center"
+                    android:text="通过"
+                    android:textColor="@color/color_tv_second"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_audit_driver_go"
+                    style="@style/Tv_Default_Style"
+                    android:gravity="right"
+                    android:text="选择人员"
+                    android:textColor="@color/color_green" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_bg"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/size_30dp"
+                android:paddingRight="@dimen/size_20dp"
+                android:paddingTop="@dimen/size_30dp">
+
+                <TextView
+                    style="@style/Tv_Default_Style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="押运员"
+                    android:textColor="@color/color_tv_second" />
+
+                <TextView
+                    android:id="@+id/tv_audit_edriver_name"
+                    style="@style/Tv_Default_Style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_audit_edriver_same"
+                    style="@style/Tv_Bg_Padding_Style"
+                    android:layout_marginRight="@dimen/size_20dp"
+                    android:background="@drawable/shape_stroke_bg_5dp"
+                    android:gravity="center"
+                    android:text="通过"
+                    android:textColor="@color/color_tv_second"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_audit_edriver_go"
+                    style="@style/Tv_Default_Style"
+                    android:gravity="right"
+                    android:text="选择人员"
+                    android:textColor="@color/color_green" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/layout_error"
+        layout="@layout/layout_error"
+        android:visibility="gone" />
+
+</LinearLayout>

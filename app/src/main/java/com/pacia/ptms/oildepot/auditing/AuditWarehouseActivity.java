@@ -93,6 +93,9 @@ public class AuditWarehouseActivity extends BaseActivity {
 
     private void setViewData(RecordBean bean) {
         plate1.setText(bean.getDyHeaderTsNo1());
+        if (bean.getDyHeaderTsNo2().equals("")) {
+            layout_audit_2.setVisibility(View.GONE);
+        }
         plate2.setText(bean.getDyHeaderTsNo2());
         String qyc = bean.getQycNum();
         if (qyc.equals("")) {
@@ -263,7 +266,7 @@ public class AuditWarehouseActivity extends BaseActivity {
     private void queryCheckMsgByPlate(String plate) {
         ServiceFactory.getService(ApiService.class)
                 .queryCheckMsgByPlate(plate)
-                .compose(SchedulersHelper.<ResponseBody>io_main(context, true))
+                .compose(SchedulersHelper.<ResponseBody>io_main(context, true,"访问中..."))
                 .compose(this.<ResponseBody>bindUntilEvent(ActivityEvent.DESTROY))
                 .subscribe(new BaseObserver<ResponseBody>() {
                     @Override

@@ -104,7 +104,7 @@ public class CenterFragment extends BaseFragment {
     private void loginOut() {
         ServiceFactory.getService(ApiService.class)
                 .loginOut()
-                .compose(SchedulersHelper.<ResponseBody>io_main(fContext, true))
+                .compose(SchedulersHelper.<ResponseBody>io_main(fContext, true,"退出中..."))
                 .compose(this.<ResponseBody>bindUntilEvent(FragmentEvent.DESTROY))
                 .subscribe(new BaseObserver<ResponseBody>() {
                     @Override

@@ -12,6 +12,7 @@ import com.pacia.ptms.adapter.ViolaReformAdapter;
 import com.pacia.ptms.bean.ViolaReformBean;
 import com.pacia.ptms.bean.ViolaReguInfoBean;
 import com.pacia.ptms.bean.ViolatCheckBean;
+import com.pacia.ptms.carrier.reform.ReformActivity;
 import com.pacia.ptms.service.ApiService;
 import com.pacia.ptms.service.Constant;
 import com.pacia.ptms.utils.DateUtils;
@@ -104,31 +105,36 @@ public class ViolaReguInfoActivity extends BaseActivity {
         setTopTitle(plate);
         ToolUtils.createRecycleManager(context, rv_viola);
         rv_viola.setNestedScrollingEnabled(false);
-        if (SPUtils.getRoleType(this).equals(Constant.ROLE_OIL_WAREHOUSE)) {
+        if (SPUtils.getRoleType(this).equals(Constant.ROLE_OIL_WAREHOUSE) ||
+                SPUtils.getRoleType(this).equals(Constant.ROLE_CARRIER)) {
             setRightMsg("", R.drawable.ic_inspec_edit);
         }
         setRightClickListener(new OnRightClickListen() {
             @Override
             public void onRightClick(View view) {
-                dialogUtils.createAlertDialog(ViolaReguInfoActivity.this, "提示", "是否确认审核", true,
-                        "通过", "不通过");
-                dialogUtils.setOnSureClickListener(new DialogUtils.onSureClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        //合格
-                        commitViola(gid, "30");
-                        strStatue = "已合格";
-                    }
-                });
-                dialogUtils.setOnCancelClickListener(new DialogUtils.onCancelClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        //不合格
-                        commitViola(gid, "20");
-                        strStatue = "未合格";
-                    }
-                });
-
+                if (SPUtils.getRoleType(context).equals(Constant.ROLE_OIL_WAREHOUSE)) {
+                    dialogUtils.createAlertDialog(ViolaReguInfoActivity.this, "提示", "是否确认审核", true,
+                            "通过", "不通过");
+                    dialogUtils.setOnSureClickListener(new DialogUtils.onSureClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            //合格
+                            commitViola(gid, "30");
+                            strStatue = "已合格";
+                        }
+                    });
+                    dialogUtils.setOnCancelClickListener(new DialogUtils.onCancelClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            //不合格
+                            commitViola(gid, "20");
+                            strStatue = "未合格";
+                        }
+                    });
+//                    doActivity(CreateViolaActivity.class,gid,plate);
+                } else if (SPUtils.getRoleType(context).equals(Constant.ROLE_CARRIER)) {
+                    doActivity(ReformActivity.class);
+                }
             }
         });
     }
@@ -146,7 +152,7 @@ public class ViolaReguInfoActivity extends BaseActivity {
 //            list_imgUrls = Arrays.asList(urls);
         } else {
             if ("".equals(imgUrls)) {
-                list_imgUrls.add(R.mipmap.wg );
+                list_imgUrls.add(R.mipmap.wg);
             } else {
 //                list_imgUrls.add(imgUrls);
             }
@@ -235,7 +241,7 @@ public class ViolaReguInfoActivity extends BaseActivity {
     private void commitViola(String gid, final String statue) {
         ServiceFactory.getService(ApiService.class)
                 .oilWareHouseViola(SPUtils.getUserGid(this), gid, statue)
-                .compose(SchedulersHelper.<ResponseBody>io_main(context, true))
+                .compose(SchedulersHelper.<ResponseBody>io_main(context, true,"提交中..."))
                 .compose(this.<ResponseBody>bindUntilEvent(ActivityEvent.DESTROY))
                 .subscribe(new BaseObserver<ResponseBody>() {
                     @Override

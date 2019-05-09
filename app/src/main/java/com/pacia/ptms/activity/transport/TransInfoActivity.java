@@ -11,6 +11,7 @@ import com.pacia.ptms.activity.base.BaseActivity;
 import com.pacia.ptms.adapter.TransProgressAdapter;
 import com.pacia.ptms.bean.RecordBean;
 import com.pacia.ptms.bean.TransProgressBean;
+import com.pacia.ptms.carrier.reform.ChoseMsgActivity;
 import com.pacia.ptms.oildepot.auditing.AuditWarehouseActivity;
 import com.pacia.ptms.service.ApiService;
 import com.pacia.ptms.service.Constant;
@@ -66,7 +67,8 @@ public class TransInfoActivity extends BaseActivity implements BaseQuickAdapter.
     @Override
     public void initView() {
         setTopTitle(getString(R.string.trans_info));
-        if (SPUtils.getRoleType(this).equals(Constant.ROLE_OIL_WAREHOUSE)) {
+        if (SPUtils.getRoleType(this).equals(Constant.ROLE_OIL_WAREHOUSE)
+                || SPUtils.getRoleType(this).equals(Constant.ROLE_CARRIER)) {
             setRightMsg("", R.drawable.ic_inspec_edit);
         }
         gid = getIntent().getStringExtra("0");
@@ -79,7 +81,11 @@ public class TransInfoActivity extends BaseActivity implements BaseQuickAdapter.
         setRightClickListener(new OnRightClickListen() {
             @Override
             public void onRightClick(View view) {
-                doActivity(AuditWarehouseActivity.class, truckNo1);
+                if (SPUtils.getRoleType(context).equals(Constant.ROLE_OIL_WAREHOUSE)) {
+                    doActivity(AuditWarehouseActivity.class, truckNo1);
+                } else if (SPUtils.getRoleType(context).equals(Constant.ROLE_CARRIER)) {
+                    doActivity(ChoseMsgActivity.class, truckNo1, gid);
+                }
             }
         });
     }

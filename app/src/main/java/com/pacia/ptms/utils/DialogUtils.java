@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.donkingliang.imageselector.utils.ImageSelectorUtils;
 import com.pacia.ptms.R;
 import com.pacia.ptms.service.Constant;
 
@@ -149,7 +150,7 @@ public class DialogUtils {
             public void onClick(View view) {
                 finalDialog.dismiss();
                 if (isChoseMore) {
-//                    ImageSelectorUtils.openPhoto(ctx, code);
+                    ImageSelectorUtils.openPhoto(ctx, code);
                 } else {
                     ToolUtils.openPhotoAlbum(ctx, code);
                 }

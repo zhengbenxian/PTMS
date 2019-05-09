@@ -137,6 +137,7 @@
     </style>
 
     <style name="Et_Search" parent="Et_Login_Style">
+        <item name="android:drawableLeft">@drawable/ic_search</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:paddingLeft">@dimen/size_15dp</item>
         <item name="android:paddingTop">@dimen/size_5dp</item>

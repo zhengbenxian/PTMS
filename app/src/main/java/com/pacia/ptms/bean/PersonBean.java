@@ -12,6 +12,7 @@ public class PersonBean implements Serializable {
     //简略
     private String gid;
     private String name;
+    private String mPhone;
     //详细人员信息
     private String ryGid;
     private String ryName;
@@ -39,6 +40,14 @@ public class PersonBean implements Serializable {
 
     public void setAptitudeList(List<AptitudeBean> aptitudeList) {
         this.aptitudeList = aptitudeList;
+    }
+
+    public String getmPhone() {
+        return mPhone;
+    }
+
+    public void setmPhone(String mPhone) {
+        this.mPhone = mPhone;
     }
 
     public String getRyHName() {

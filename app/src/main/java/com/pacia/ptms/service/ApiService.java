@@ -9,6 +9,7 @@ import okhttp3.ResponseBody;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
+import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.Part;
 import retrofit2.http.PartMap;
@@ -174,8 +175,9 @@ public interface ApiService {
                                           @Part MultipartBody.Part[] part);
 
     //违规单创建
+    @Multipart
     @POST(BaseUrl.createViola)
-    Observable<ResponseBody> createViola(@PartMap Map<String, RequestBody> map,
+    Observable<ResponseBody> createViola(@PartMap Map<String,RequestBody> map,
                                          @Part MultipartBody.Part[] part);
 
     //油库审核
@@ -184,4 +186,12 @@ public interface ApiService {
     Observable<ResponseBody> oilWareHouseViola(@Field("userGid") String userGid,
                                                @Field("updateByViolatGid") String gid,
                                                @Field("violatStatus") String violatStatus);
+
+    //选择人员
+    @FormUrlEncoded
+    @POST(BaseUrl.ChosePerson)
+    Observable<ResponseBody> chosePerson(@Field("dyHeaderGid") String dyHeaderGid,
+                                         @Field("driver") String driver,
+                                         @Field("escort") String escort,
+                                         @Field("userGid") String userGid);
 }
